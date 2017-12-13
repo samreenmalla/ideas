@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ideator</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+	<div id ="wrap">
+
+    <div class = "container">
+      <div class = "row">
+        <div class="col-col-md 12">
+
+ 	          <%= render 'shared/nav' %>
+        </div>
+      </div>
+    </div>
+
+  	
+
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-col-md 12">
+        <%= render 'shared/flash_messages' %>
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+
+
+<%= render 'shared/footer' %>
+  </body>
+</html>
